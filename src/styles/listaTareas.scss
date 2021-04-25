@@ -1,0 +1,110 @@
+@import './utils';
+.list{
+  padding: 2rem;
+  width: 70vw;
+  background-color: $Terciary;
+  color: $Aux-2;
+  border-radius: 1rem;
+
+  .tarea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.3rem 1rem 1rem 0.5rem;
+    border-left: 0.1rem solid white;
+    width: 100%;
+    word-wrap: break-word;
+
+  }
+
+  ::placeholder{
+    text-decoration: underline;
+  }
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.add{
+  margin: 1rem;
+}
+
+.buttons{
+  margin: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.controls{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.info{
+  width: 80%;
+  word-wrap:break-word;
+}
+
+input[type='text']{
+  height: 2rem;
+  margin: 0.5rem 0rem;
+}
+
+
+textarea{
+  height: 5rem;
+  resize: none;
+  overflow: hidden;
+}
+
+input, textarea{
+  max-width: 100%;
+  width: 25rem;
+  padding: 0.5rem;
+  border: 0.1rem solid transparent;
+  border-bottom: 0.1rem $Aux-1 solid;
+  font-size:1rem;
+  font-weight: bold;
+  outline: none;
+  color: $Aux-1;
+  transition: 200ms border ease-out;
+}
+
+input:focus, textarea:focus{
+  border: 0.1rem $Aux-1 dashed;
+}
+
+::placeholder{
+  color: $Aux-2;
+}
+
+.hidden{
+  display: none;
+}
+
+.btn-tarea{
+  width: min-content;
+  height: min-content;
+  font-size: 2rem;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 5rem;
+  i{
+    transition: font-weight 100ms ease-in, color 100ms ease-in;
+  }
+}
+
+.btn-tarea:hover{
+  background-color: transparent;
+  i{
+    color: $Aux-2;
+    font-weight: bolder;
+  }
+}

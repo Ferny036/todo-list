@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+/* Color Theme Swatches in Hex */
+$Primary: #89F0C8;
+$Secondary: #6CBD9E;
+$Terciary: #D3F2E6;
+$Aux-1: #62706B;
+$Aux-2: #40705E;
+
+.btn{
+  padding: 0.5rem 1rem;
+  width: 4rem;
+  border-radius: 0.7rem;
+  outline: none;
+  border: 0.3rem solid transparent;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color:$Aux-2;
+  background-color: white;
+  transition: 
+  border-color 100ms ease-in, 
+  color 100ms ease-in, 
+  background-color 100ms ease-in-out,
+  box-shadow 100ms ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover{
+  box-shadow: 0.2rem 0.2rem  $Terciary;
+}
+
+.btn-danger{
+  color:$Aux-2;
+  border-color: $Aux-2;
+}
+
+.btn-danger:hover{
+  background-color: $Aux-2;
+  color:white;
+}
+
+.btn-primary{
+  color: $Secondary;
+  border-color: $Secondary;
+}
+
+.btn-primary:hover{
+  color: white;
+  background-color: $Secondary;
+}
